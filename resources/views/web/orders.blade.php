@@ -88,7 +88,7 @@ m191 -112 c8 -10 14 -65 17 -177 4 -154 6 -163 28 -186 13 -13 28 -39 33 -57
                 <div class="card-body p-4  border ">
                     @foreach($order[1]->items as $item)
                     <div class="p-3">
-                        <img src="storage/{{$item['image']}}" class="image mb-3" alt="" width="200px">
+                        <img src="/storage/{{$item['image']}}" class="image mb-3" alt="" width="200px">
                         <h4> {{$item['name']}} </h4>
                         <h4>Quantity: {{$item['qty']}} </h4>
                         @if($item['aftersale'] == 0)

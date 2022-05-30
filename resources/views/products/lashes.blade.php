@@ -31,7 +31,7 @@
             <div class="modal-content animate">
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('{{$products->id}}').style.display='none'" class="close" title="Close Model">&times;</span>
-                    <img src="storage/{{$products['image']}}" alt="Image" class="avatar">
+                    <img src="/storage/{{$products['image']}}" alt="Image" class="avatar">
                 </div>
                 <div>
                     <h4 style="font-weight: bold;"> Description </h4>
@@ -45,7 +45,7 @@
         @else
         <div class="cl-12 col-md-6 col-lg-3 pb-3">
             <div class="rounded shadow pb-3 w-100 border" style=>
-                <img src="storage/{{$products['image']}}" class="cursor rounded mt-2" onclick="document.getElementById('{{$products->id}}').style.display='block'" style="height:180px ;width:200px;" alt="">
+                <img src="/storage/{{$products['image']}}" class="cursor rounded mt-2" onclick="document.getElementById('{{$products->id}}').style.display='block'" style="height:180px ;width:200px;" alt="">
                 <h4 class="font pt-2">{{$products['name']}}</h4>
                 <span class="font" style="text-decoration: line-through; color:#999;"> {{$products['price']}}KD </span>
                 <span class="font" style="font-size: 20px; color:#f3268b;font-weight: bold;"> {{$products['aftersale']}}KD </span>
@@ -64,7 +64,7 @@
             <div class="modal-content animate">
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('{{$products->id}}').style.display='none'" class="close" title="Close Model">&times;</span>
-                    <img src="storage/{{$products['image']}}" alt="Image" class="avatar">
+                    <img src="/storage/{{$products['image']}}" alt="Image" class="avatar">
                 </div>
                 <div>
                     <h4 style="font-weight: bold;"> Description </h4>

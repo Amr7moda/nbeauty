@@ -16,7 +16,7 @@
         @if($products['sale'] == 0)
         <div class="cl-12 col-md-6 col-lg-3 pb-3">
             <div class="rounded shadow pb-3 w-100 border" style=>
-                <img src="storage/{{$products['image']}}" class="cursor rounded mt-2" style="height:180px ;width:200px;" alt="">
+                <img src="/storage/{{$products['image']}}" class="cursor rounded mt-2" style="height:180px ;width:200px;" alt="">
                 <h3 class="font">{{$products['name']}}</h3>
                 <p class="font"> {{$products['price']}}KD </p>
                 <div class="col p-3">
@@ -29,7 +29,7 @@
                     @else
                     <div class="cl-12 col-md-6 col-lg-3 pb-3">
                         <div class="rounded shadow pb-3 w-100 border" style=>
-                            <img src="storage/{{$products['image']}}" class="cursor rounded mt-2" style="height:180px ;width:200px;" alt="">
+                            <img src="/storage/{{$products['image']}}" class="cursor rounded mt-2" style="height:180px ;width:200px;" alt="">
                             <div>
                                 <!-- <img src="web/sale.png" width="70px" class=""> -->
                                 <span style="font-size: 1.75rem;" class="font ">{{$products['name']}}</span>

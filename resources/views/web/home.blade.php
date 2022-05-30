@@ -35,7 +35,7 @@
             @foreach($skin as $skins)
             @if($skins['sale'] == 0)
             <div class="cl-12 col-md-6 col-lg-3 text-center">
-                <img src="storage/{{$skins['image']}}" alt="" width="100%" height="250px">
+                <img src="/storage/{{$skins['image']}}" alt="" width="100%" height="250px">
                 <div class="p-3">
                     <a href="{{route('cart.store',$skins->id)}}">
                         <button class="btn btn-lg p-2 shadow b1" type="submit">
@@ -49,7 +49,7 @@
             </div>
             @else
             <div class="cl-12 col-md-6 col-lg-3 text-center">
-                <img src="storage/{{$skins['image']}}" alt="" width="100%" height="250px">
+                <img src="/storage/{{$skins['image']}}" alt="" width="100%" height="250px">
                 <div class="p-3">
                     <a href="{{route('cart.store',$skins->id)}}">
                         <button class="btn btn-lg p-2 shadow b1" type="submit">
@@ -68,7 +68,7 @@
             @foreach($lash as $lashs)
             @if($lashs['sale'] == 0)
             <div class="cl-12 col-md-6 col-lg-3 pb-3 text-center">
-                <img src="storage/{{$lashs['image']}}" alt="" width="100%" height="250px">
+                <img src="/storage/{{$lashs['image']}}" alt="" width="100%" height="250px">
                 <div class="p-3">
                     <a href="{{route('cart.store',$lashs->id)}}">
                         <button class="btn btn-lg p-2 shadow b1" type="submit">
@@ -82,7 +82,7 @@
             </div>
             @else
             <div class="cl-12 col-md-6 col-lg-3 pb-3 text-center">
-                <img src="storage/{{$lashs['image']}}" alt="" width="100%" height="250px">
+                <img src="/storage/{{$lashs['image']}}" alt="" width="100%" height="250px">
                 <div class="p-3">
                     <a href="{{route('cart.store',$lashs->id)}}">
                         <button class="btn btn-lg p-2 shadow b1" type="submit">
@@ -116,7 +116,7 @@
         <div class="swiper-wrapper">
             @foreach($sale as $sales)
             <div class="swiper-slide swiper-slide2 cursor ">
-                <img src="storage/{{$sales['image']}}" class="image" alt="" width="200px">
+                <img src="/storage/{{$sales['image']}}" class="image" alt="" width="200px">
                 <div class="text pt-5 shadow">
                     <h4 class="font pt-2 ">{{$sales['name']}}</h4>
                     <span class="font " style="text-decoration: line-through; color:#999;"> {{$sales['price']}}KD </span>
