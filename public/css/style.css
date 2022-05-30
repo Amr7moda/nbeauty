@@ -1,0 +1,498 @@
+body{
+    /* background-color: #f3e6d6; */
+    /* background-image: url(/web/vbbb-min.jpg); */
+}
+
+.navbar{
+  z-index: 10;
+  position: relative;
+}
+
+.nav a{
+  color: black;
+}
+
+.nav a:hover{
+  color: #f3268b;
+}
+
+.h1-1{
+    font-family: 'Quintessential', cursive;
+    font-size: 25px;
+}
+
+.bb{
+    background-image: linear-gradient(to right,#2d343c,#4e515a);
+}
+
+button.navbar-toggler:focus{
+  border-color: #f3268b;
+    box-shadow: 0 0 0 0.25rem #ffb5d9;
+}
+}
+
+.font{
+    color:#373e46
+}
+
+.b1{
+    color:black;
+    border: 1px solid #f3268b ;
+}
+
+.b1:hover{
+    background-color:  #f3268b;
+    color: black ;
+}
+
+.b2{
+  background-color: #f3268b;
+  color: white;
+}
+
+.b2:hover{
+  background-color: #e00e77;
+  color: white;
+}
+
+
+/* Modal ///////////////////////////////////////////////////////////*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    /* z-index: 1; Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+
+    /* Center the image and position the close button */
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+        position: relative;
+      }
+      
+
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 60%; /* Could be more or less, depending on screen size */
+      }
+
+      img.avatar {
+        width: 40%;
+        border-radius: 50%;
+      }
+      
+      /* The Close Button (x) */
+.close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: red;
+        cursor: pointer;
+      }
+
+.descr:hover{
+        white-space: pre-wrap;
+      }
+
+      
+      /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+
+
+  /* swiper ////////////////////////////////////*/
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 230px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-wrapper{
+    height: 303px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  .btn-h:hover{
+    background-color: #f3268b;
+    color: white;
+  }
+
+  .cursor {
+    cursor: pointer;
+  }
+
+
+  /* Swiper 2 ///////////////////////////////////////*/
+  .swiper2 {
+    width: 100%;
+    height: 51%;
+  }
+
+  .swiper-slide2 {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide2 img{
+    display: block;
+    width: 90% ;
+    height: 100%;
+    object-fit: cover;
+  }
+
+ .swiper-slide .text,.image {
+    transition: opacity 0.5s ease-in-out;
+  }
+
+ .swiper-slide .text{
+    position:absolute; 
+    top: 0;
+    opacity:0;
+    width: 95%;
+    height: 79%;
+  }
+
+ .swiper-slide:hover .image{
+    opacity: 0;
+  }
+
+  .swiper-slide:hover .text{
+    opacity: 1;
+  }
+
+  .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
+    width: 50% !important;
+    left: 27vw !important;
+  }
+  
+  .swiper-pagination-progressbar-fill{
+    background-color: #f3268b !important;
+  }
+
+  .swiper-button-prev{
+    left: 25px;
+  }
+
+  .swiper-button-next{
+    right: 25px;
+  }
+
+  .swiper-button-next, .swiper-button-prev{
+    top: 50%;
+  }
+
+/* cart qty /////////////////////////////////*/
+span {cursor:pointer; }
+.minus, .plus{
+  width:20px;
+  background:#f2f2f2;
+  border-radius:4px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.number input{
+  height:34px;
+  width: 100px;
+  text-align: center;
+  font-size: 23px;
+  border:1px solid #ddd;
+  border-radius:4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.search{
+  float: right;
+  width: 22%;
+  margin-right: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0px;
+  border: 1px solid #f3268b;
+  border-top: 0px;
+  background-color: #F8F9F9;
+  position: absolute;
+  top: 61px;
+}
+
+.form-control:focus{
+  border-color: #f3268b;
+  box-shadow: 0 0 0 0.25rem #FFB5D9;
+}
+
+.scroll {
+  overflow-y: auto;
+  z-index: 5;
+}
+
+.fdiv0{
+  margin-left:-40px ;
+}
+
+/* checkout page /////////////////////////////////////////////////*/
+
+.StripeElement {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.Shipping input{
+  height:34px;
+  font-size: 15px;
+  border:1px solid #e00e77;
+  border-radius:8px;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 0 0rem 0.2rem #f3268b!important;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+.welc{
+  display: none;
+}
+.nav1{
+  display: none;
+}
+
+.nav2{
+  display: unset !important;
+}
+
+ul.nav-tabs{
+  margin-top: 10px;
+}
+
+.nav-cus{
+  gap: 0px !important;
+}
+
+.search{
+  width: 92%;
+  z-index: 11;
+  top: 147px !important;
+  left: 16px;
+}
+
+.hid{
+  display: none;
+}
+
+.modal-content{
+  width: 90%;
+}
+
+.mySwiper{
+  width: 100% !important;
+  margin-left:-40px;
+}
+
+.mySwiper img{
+  width: 150% !important;
+}
+
+.swiper-slide{
+  width: 180px;
+}
+
+.swiper-slide2{
+  width: 50% !important;
+}
+
+.swiper-slide2 img{
+  height: 70%;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  display: none !important;
+}
+
+.login{
+  padding: 2rem !important;
+  width: 98% !important;
+  margin-left: 3%;
+}
+
+.b1res{
+  width: 100%;
+  font-size: 15px;
+}
+
+.b2{
+  width: 55% !important;
+}
+
+.b2res{
+  width: 70% !important;
+}
+
+.b2resbonsive{
+  width: 100% !important;
+}
+
+.d-flexres{
+  flex-direction: column;
+  padding: 10%;
+}
+
+.contres{
+  margin: 0px !important;
+}
+
+.cardres{
+  margin-bottom: 3rem!important;
+}
+
+ 
+.footer{
+  padding-left: 2rem !important;
+}
+
+.fdiv0{
+  margin-left: 0px;
+}
+
+.fdiv1{
+  width: 48% !important;
+}
+
+.fdiv2{
+  width: 52% !important;
+}
+
+.fdiv3{
+  width: 48% !important;
+}
+
+.fdiv4{
+  width: 52% !important;
+}
+
+.fdiv4 h4{
+  margin-right: 35px;
+}
+
+.fdiv4 a svg{
+  width: 25px !important;
+  margin-right: -6px;
+}
+
+}
+
+
+@media screen and (min-width: 769px ) and (max-width:991px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+}
+
+.navbar-expand-lg .navbar-toggler {
+  display: none;
+}
+
+.search{
+  width: 290px;
+}
+
+.login{
+  padding: 2rem !important;
+  width: 80% !important;
+}
+
+.fdiv0{
+  margin-left: 0px;
+}
+
+.fdiv1{
+  width: 22% !important;
+}
+
+.fdiv2{
+  width: 24% !important;
+}
+
+.fdiv3{
+  width: 22% !important;
+}
+
+.fdiv4{
+  width: 29% !important;
+}
+
+
+}
